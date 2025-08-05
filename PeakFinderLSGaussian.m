@@ -9,7 +9,7 @@ arguments
     percentilecut double = 0.9 % percentile cutoff for determining BG S.D.
     max_ellipticity double = 1.25 % max spot ellipticity
     max_radius double = 4 % max spot radius in pixels
-    min_radius double = 1 % min spot radius in pixels
+    min_radius double = 0.5 % min spot radius in pixels
 end
 
 
