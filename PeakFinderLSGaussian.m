@@ -1,13 +1,13 @@
-function [xy] = PeakFinderLSGaussian(I,threshold,edge_pad,bg_subtract,percentilecut,max_ellipticity,max_radius,min_radius)
+function [xy] = PeakFinderLSGaussian(I,threshold,edge_pad,max_ellipticity,bg_subtract,percentilecut,max_radius,min_radius)
 % Find peaks image using Gaussian least-squares fitting
 % Alex Johnson-Buck, The University of Michigan, 2024
 arguments
     I {mustBeNumeric} % Input image
     threshold double = 10; % Background cutoff value for peak localization
     edge_pad {mustBeNumeric} = 10 % Pixels to ignore at edge of image
+    max_ellipticity double = 1.25 % max spot ellipticity
     bg_subtract logical = true % Whether to subtract image background prior to fitting
     percentilecut double = 0.9 % percentile cutoff for determining BG S.D.
-    max_ellipticity double = 1.25 % max spot ellipticity
     max_radius double = 4 % max spot radius in pixels
     min_radius double = 0.5 % min spot radius in pixels
 end
