@@ -20,7 +20,6 @@ if bg_subtract
     I = I - imopen(I,strel('disk',10));
 end
 
-Iorig = I;
 I = im2double(I);
 I = I/max(max(I));
 
