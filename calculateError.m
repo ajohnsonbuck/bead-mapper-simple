@@ -29,6 +29,6 @@ function logText = doQC(SpotPairs,Results)
         msgbox(warnings);
         logText = warnings{2:end};
     else
-        logText = 'Mapping successful!';
+        logText = 'Mapping successful! Remember to save your bead map file.';
     end
 end
