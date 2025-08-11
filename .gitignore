@@ -2,3 +2,6 @@
 *.asv
 *.bak
 *.orig
+
+# Ignore release\ folder
+./release
