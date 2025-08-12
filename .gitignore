@@ -4,4 +4,4 @@
 *.orig
 
 # Ignore release folder
-./release/
+release/
