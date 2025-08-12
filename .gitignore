@@ -3,5 +3,5 @@
 *.bak
 *.orig
 
-# Ignore release\ folder
-./release
+# Ignore release folder
+./release/
